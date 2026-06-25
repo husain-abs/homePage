@@ -1,3 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+@theme {
+    --color-page-bg: #0f0f1f;
+
+    --color-hero-bg: #1a1a2e;
+    --color-hero-border: #2a2a40;
+    --color-hero-text: #e2e8f0;
+    --color-hero-muted: #64748b;
+
+    --color-accent: #7eb8f7;
+    --color-accent-dim: #1e2d4a;
+    --color-accent-muted: #94a3b8;
+
+    --color-tile-bg: #383861;
+    --color-tile-border: #3e3e61;
+    
+    --color-tile-text: #e2e8f0;
+
+    --color-pill-blue-bg: #dbeafe;
+    --color-pill-blue-text: #1e3a8a;
+    --color-pill-purple-bg: #ede9fe;
+    --color-pill-purple-text: #3730a3;
+
+    --radius-tile: 10px;
+
+    /* github activity color defs */
+    --color-contribution-0: #1e1e34;
+    --color-contribution-1: #1e2d4a;
+    --color-contribution-2: #378add;
+    --color-contribution-3: #7eb8f7;
+
+
+}
+
+.bento-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-areas:
+        "hero       projects"
+        "certs      stack"
+        "github     github"
+        "learning   learning" /* <- not used */
+        "uptime     localTime"
+        "contact    resume";
+}
+
