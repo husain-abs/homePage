@@ -66,11 +66,21 @@
 .bento-grid {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 }
 
 .bento-hero {
   grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-hero {
+    grid-column: span 1;
+  }
 }
 
 @layer components {
